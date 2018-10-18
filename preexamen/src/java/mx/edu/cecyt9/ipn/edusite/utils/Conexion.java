@@ -116,7 +116,7 @@ public class Conexion {
             con=DriverManager.getConnection(url, User, Pass);
             sta=con.createStatement();
             
-            sta.executeUpdate("insert into Registro values(1,'"+N+"','"+Ap+"','"+Am+"','"+Usu+"','"+Contra+"','"+tel+"','"+Esc+"','"+M+"','"+D+"','"+R+"');");
+            sta.executeUpdate("insert into Registro values('"+N+"','"+Ap+"','"+Am+"','"+Usu+"','"+Contra+"','"+tel+"','"+Esc+"','"+M+"','"+D+"','"+R+"');");
             ok="Usuario Dado de alta";
         }
         
